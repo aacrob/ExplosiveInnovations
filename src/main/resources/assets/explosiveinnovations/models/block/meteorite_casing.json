@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "explosiveinnovations:block/meteorite_casing"
+  }
+}

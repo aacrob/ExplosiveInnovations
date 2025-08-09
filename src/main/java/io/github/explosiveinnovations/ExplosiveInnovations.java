@@ -1,6 +1,9 @@
 package io.github.explosiveinnovations;
 
 import com.mojang.logging.LogUtils;
+import io.github.explosiveinnovations.block.ModBlocks;
+import io.github.explosiveinnovations.item.ModCreativeModeTabs;
+import io.github.explosiveinnovations.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -41,9 +44,15 @@ public class ExplosiveInnovations
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::addCreative);
 
     }
 
@@ -55,7 +64,9 @@ public class ExplosiveInnovations
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
