@@ -19,11 +19,34 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METEORITE_INGOT.get()))
                     .title(Component.translatable("creativetab.ei_materials_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        // raw ores
                         pOutput.accept(ModItems.RAW_METEORITE.get());
+
+                        // ingots
                         pOutput.accept(ModItems.METEORITE_INGOT.get());
+
+                        // nuggets
+                        pOutput.accept(ModItems.METEORITE_NUGGET.get());
+
+                        //plates
                         pOutput.accept(ModItems.METEORITE_PLATE.get());
 
+                    })
+                    .build());
+    public static final RegistryObject<CreativeModeTab> EI_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ei_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.METEORITE_CASING.get()))
+                    .title(Component.translatable("creativetab.ei_blocks_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        // ore blocks
+                        pOutput.accept(ModBlocks.METEORITE_BEARING_ORE.get());
+
+                        // raw ore blocks
+
+                        // ingot blocks
+
+                        // machine casings
                         pOutput.accept(ModBlocks.METEORITE_CASING.get());
+
                     })
                     .build());
 

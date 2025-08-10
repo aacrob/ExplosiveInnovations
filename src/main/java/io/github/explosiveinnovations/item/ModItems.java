@@ -15,6 +15,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> METEORITE_INGOT = ITEMS.register("meteorite_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METEORITE_NUGGET = ITEMS.register("meteorite_nugget",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_METEORITE = ITEMS.register("raw_meteorite",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METEORITE_PLATE = ITEMS.register("meteorite_plate",

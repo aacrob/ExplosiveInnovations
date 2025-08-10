@@ -1,9 +1,12 @@
 {
   "item.explosiveinnovations.meteorite_ingot": "Meteorite Ingot",
+  "item.explosiveinnovations.meteorite_nugget": "Meteorite Nugget",
   "item.explosiveinnovations.raw_meteorite": "Raw Meteorite",
   "item.explosiveinnovations.meteorite_plate": "Meteorite Plate",
 
   "block.explosiveinnovations.meteorite_casing": "Meteorite Casing",
+  "block.explosiveinnovations.meteorite_bearing_ore": "Meteorite Bearing Ore",
 
-  "creativetab.ei_materials_tab": "EI Materials"
+  "creativetab.ei_materials_tab": "EI Materials",
+  "creativetab.ei_blocks_tab": "EI Blocks"
 }
